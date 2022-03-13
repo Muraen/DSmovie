@@ -3,7 +3,7 @@
 :root {
     --bg-gray: #ddd ;
     --color-primary: #4d41c0;
-    --withe:#FFFFFF;
+    --white:#FFFFFF;
     --text-gray: #4a4a4a;
     --text-light-gray: #aaa;
     --star-yellow: #FFBB3A;
@@ -21,7 +21,7 @@ html, body {
 
 header{
     background-color:var(--color-primary);
-    color: var(--withe);
+    color: var(--white);
     height: 60px;
     display: flex;
     align-items: center; 
@@ -62,7 +62,7 @@ a, a :hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0px 10px;
 
 }
 
@@ -113,7 +113,7 @@ a, a :hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
-    color: var(--withe);
+    color: var(--white);
     font-size: 14px;
     font-weight: 700;
     display: flex;
@@ -129,7 +129,7 @@ a, a :hover {
 }
 
 .dsmovie-form-description {
-    background-color: var(--withe);
+    background-color: var(--white);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -162,4 +162,51 @@ a, a :hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(57%) saturate(2646%) hue-rotate(234deg) brightness(93%) contrast(90%);
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
 }
